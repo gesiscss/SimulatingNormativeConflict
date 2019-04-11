@@ -3,7 +3,7 @@
 Animator2 <- function(NetList,
                       Slave_i = i){
         
-        # creating base object (deleting color vector so it doesn´t atomatically get chosen)
+        # creating base object (deleting color vector so it doesn´t automatically get chosen)
         net.js <- NetList[[1]]
         net.js <- delete_vertex_attr(net.js, "color")
         
