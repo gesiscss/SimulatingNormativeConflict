@@ -29,20 +29,20 @@ Simulation <- function(
         ##### Simulation Parameters ######
         
         ## Stable Parameters
-        r = 1,                            # number of runs per condition
-        nodes = 10,                      # number of nodes in network
-        iter = 20,                        # Number of Iterations for the Granovetter Threshold Model (In the final version, we should implement automatic conversion detection to speed it up)
+        r = 20,                            # number of runs per condition
+        nodes = 2000,                      # number of nodes in network
+        iter = 50,                         # Number of Iterations for the Granovetter Threshold Model (In the final version, we should implement automatic conversion detection to speed it up)
         
         ## varying parameters (some of these can handle sequences)
         
-        norm_end_maj = 0.7,               # proportion of majority group that endorses majority norm 
-        norm_end_min = 0.3,               # proportion of minority group that endorses majority norm
-        t = "uniform",                    # threshold value for the Granovetter Threshold Model supports single value between 0 and 1, "uniform" and "normal" (trimmed to 0 - 1)
-        tmean = NA,                       # when t is supposed to come from a normal distribution, we need to specify a value for its mean
-        tsd = NA,                         # when t is supposed to come from a norms distribution, we need to specify a value for its sd    
-        m = 2,                            # value for minimum degree (SEQUENCE NOT IMPLEMENTED YET)
-        g = seq(0,0.5,0.5),               # proportion of network that's in the minority group      
-        h = seq(0,1,0.5),                 # homophily
+        norm_end_maj = c(0.5,0.6,0.8),               # proportion of majority group that endorses majority norm 
+        norm_end_min = c(0.5,0.4,0.2),               # proportion of minority group that endorses majority norm
+        t = "uniform",                               # threshold value for the Granovetter Threshold Model supports single value between 0 and 1, "uniform" and "normal" (trimmed to 0 - 1)
+        tmean = NA,                                  # when t is supposed to come from a normal distribution, we need to specify a value for its mean
+        tsd = NA,                                    # when t is supposed to come from a norms distribution, we need to specify a value for its sd    
+        m = 2,                                       # value for minimum degree (SEQUENCE NOT IMPLEMENTED YET)
+        g = seq(0.1,0.5,0.1),                        # proportion of network that's in the minority group      
+        h = seq(0.1,1,0.1),                          # homophily
         
         ##### Simulation Settings #####
         

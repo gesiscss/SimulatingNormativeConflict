@@ -17,11 +17,11 @@ AsynchronousUpdateing <- function(network,
                 # we switch off warning because R prints a useless warning for using subgraph()
                 options(warn=-1)
                 
-                # getting a vector of nodes in the ego-network of the node (including the node itself)
-                neighbours <- ego(network,1,node,"all",mindist=0)
+                # getting a vector of nodes in the ego-network of the node
+                neighbours <- ego(network,1,node,"all",mindist=1)
                 
                 # building a graph object of only the neighbors of the node
-                NeighborGraph <- induced_subgraph(network,names(unlist(neighbors)))
+                NeighborGraph <- induced_subgraph(network,names(unlist(neighbours)))
                 
                 # creating a sorted proportion table for their norm attributes
                 PropTable <- sort(prop.table(table(V(NeighborGraph)$norm)), decreasing = TRUE)
