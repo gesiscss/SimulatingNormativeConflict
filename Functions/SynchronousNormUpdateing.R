@@ -17,13 +17,11 @@ SynchronousNormUpdateing <- function(network,
                 # we switch off warning because R prints a useless warning for using subgraph()
                 options(warn=-1)
                 
-                # getting a vector of all neighbors of the node
-                neighbors <- unlist(adjacent_vertices(network,node, mode = "all"))
-                neighbors <- strsplit(names(neighbors),".",fixed=TRUE)
-                neighbors <- sapply(neighbors,`[`,2) 
+                # getting a vector of all neighbors of the node (including the node itself)
+                neighbours <- ego(network,1,node,"all",mindist=0)
                 
                 # building a graph object of only the neighbors of the node
-                NeighborGraph <- induced_subgraph(network,neighbors)
+                NeighborGraph <- induced_subgraph(network,names(unlist(neighbors)))
                 
                 # creating a sorted proportion table for their norm attributes
                 PropTable <- sort(prop.table(table(V(NeighborGraph)$norm)), decreasing = TRUE)
