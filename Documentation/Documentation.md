@@ -1,3 +1,5 @@
+# Overview of Function Arguments for Simulation.R
+
 ## Arguments for Groups and Norms
 
 **majority** This parameter takes an arbitrary text string as input to identify the majority group by attaching the string as a property to each node assigned to the majority, for example "male" or "female".
