@@ -1,4 +1,4 @@
-![10.5281/zenodo.3183121](https://zenodo.org/badge/DOI/10.5281/zenodo.3183121.svg)]
+![10.5281/zenodo.3183121](https://zenodo.org/badge/DOI/10.5281/zenodo.3183121.svg)
 
 # Simulating Normative Conflict
 
