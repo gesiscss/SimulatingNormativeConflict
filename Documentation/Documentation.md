@@ -28,13 +28,15 @@
 
 **h** Takes a sequence of numeric values between 0 and 1 as input and specifies the degree to which nodes preferentially form edges with similar or dissimilar (majority or minority group) others.
 
-## Arguments for Threshold Distribution
+## Arguments for Threshold Distribution and Updating Process
 
 **t** Takes either a single numeric value between 0 and 1 as input, or the text strings "uniform" or "normal". The parameter specifies the necessary percentage of neighboring nodes for a node to switch from their current attribute to the different one (e.g. if t = 0.6, at least 60\% of neighboring nodes have to display a different attribute for a node to change its attribute). For a single numeric value, all nodes are assigned the same value for t, for t = "uniform", values are drawn from a random uniform distribution between 0 and 1, and for t = "normal", values for t are drawn from a normal distribution with specified mean and standard deviation (see below) and truncated to values between 0 and 1.
 
 **tmean** Only meaningful for t = "normal". Takes a single numeric value as input and specifies the mean of the normal distribution from which values for the parameter t are sampled.
 
 **tsd** Only meaningful for t = "normal". Takes a single numeric value as input and specifies the standard deviation of the normal distribution from which values for the parameter t are sampled.
+
+**UpdateProcess** Takes either the text string "synchronous" or "asynchronous" as input and determines how the update process is executed. For synchronous updating, all nodes in a network update their attributes at the same time, for asynchronous updating, nodes update their attributes in a random order on each iteration, taking into account previous changes.
 
 ## Arguments for Graphics
 
@@ -52,8 +54,6 @@
 
 
 ## Arguments for Technical Settings
-
-**UpdateProcess** Takes either the text string "synchronous" or "asynchronous" as input and determines how the update process is executed. For synchronous updating, all nodes in a network update their attributes at the same time, for asynchronous updating, nodes update their attributes in a random order on each iteration, taking into account previous changes.
 
 **cores** Specifies the number of cores that should be used in parallel for the simulation. On windows machines, only one core is supported. For simulation on across multiple machines, see our script for MPI clusters in the Serverfiles Folder.
 
