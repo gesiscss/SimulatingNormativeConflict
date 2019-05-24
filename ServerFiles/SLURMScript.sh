@@ -4,8 +4,8 @@
 #SBATCH --output TestRun-%j.out
 #SBATCH --ntasks=150
 #SBATCH --mem-per-cpu=15gb
-#SBATCH --time=180:00:00
-#SBATCH --account=UniKoeln
+#SBATCH --time=360:00:00
+#SBATCH --account=UniKöln
 
 # loading the parallel R library for MPI runs
 module load R/3.5.1_intel_mkl_parallel
