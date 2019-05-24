@@ -40,7 +40,7 @@ Simulation(majority = "Christian",
            AnimatePlots = "GIF")
 ```
 ### Network
-![](ExampleNetwork1.gif)
+![](ExampleNetwork.gif)
 
 ### Results
 
