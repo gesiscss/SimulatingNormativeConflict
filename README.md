@@ -7,8 +7,21 @@ This repository is complementing our chapter "The Role of Network Structure and 
 # Instructions for Usage:
 To use the files in this repository, you can download it and extract it's contents to a folder of your choice. You then need to source the file Simulation.R to load the wrapper function that contains all subfuntions and will allow you to run a simulation with just one command. When chosing parameters for your simulation, we strongly recommand you to test the simulation with few parameters and small networks with to get a feeling for computation times on your machines. Importantly, the simulation can run substantially faster on Mac and Linux than on windows, because it is using forking to use multiple cores on unix-based systems (see for more information). A function call to simulate a small network 10 times could look like this:
 
-`TEST  
-TEST`
+```
+Simulation(majority = "Christian",  
+           minority = "Muslim",  
+           majnorm = "No Headscarf",  
+           minnorm = "Headscarf",  
+           r = 10,  
+           nodes = 100,  
+           iter = 50,  
+           norm_end_maj = 0.85,  
+           norm_end_min = 0.3,  
+           g = 0.2,  
+           h = 0.8,  
+           CreatePlots = TRUE,  
+           AnimatePlots = "HTML")
+```
 
 # Output
 
