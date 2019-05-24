@@ -20,7 +20,7 @@ Simulation(majority = "Christian",
            g = 0.2,  
            h = 0.8,  
            CreatePlots = TRUE,  
-           AnimatePlots = "HTML")
+           AnimatePlots = "GIF")
 ```
 
 # Output
