@@ -24,20 +24,6 @@ This repository is complementing our chapter "The Role of Network Structure and 
 
 **minnorm** This parameter takes an arbitrary text string as input to identify the group of nodes that hold the attribute that is predominant in the minority. For example "pro-abortion" or "contra-abortion".
 
-## Arguments for Graphics
-
-**majnormcolor** This parameter takes any valid color name in R as an input and visually identifies the group of nodes with the majnorm attribute.
-
-**minnormcolor** This parameter takes any valid color name in R as an input and visually identifies the group of nodes with the minnorm attribute.
-
-**majshape** This parameter specifies the shape of the nodes that are assigned to the majority group. Valid inputs are all shapes recognized by the vertex.shapes attribute in the plot() function of the igraph R package.
-
-**minshape** This parameter specifies the shape of the nodes that are assigned to the minority group. Valid inputs are all shapes recognized by the vertex.shapes attribute in the plot() function of the igraph R package.
-
-**CreatePlots** Takes TRUE or FALSE as input and specifies whether jpeg plots are created for each iteration of every network (not recommended for larger networks or large parameter spaces).
-
-**AnimatePlots** Takes "HTML" or "GIF" as input and specifies whether created jpeg plots should be combined into a GIF/HTML animation (see example - not recommended for larger networks or large parameter spaces).
-
 ## Arguments for Simulation Size and Parameter Space
 
 **r** Takes a single numeric value as input to specify how many networks of each parameter configuration should be generated.
@@ -63,6 +49,21 @@ This repository is complementing our chapter "The Role of Network Structure and 
 **tmean** Only meaningful for t = "normal". Takes a single numeric value as input and specifies the mean of the normal distribution from which values for the parameter t are sampled.
 
 **tsd** Only meaningful for t = "normal". Takes a single numeric value as input and specifies the standard deviation of the normal distribution from which values for the parameter t are sampled.
+
+## Arguments for Graphics
+
+**majnormcolor** This parameter takes any valid color name in R as an input and visually identifies the group of nodes with the majnorm attribute.
+
+**minnormcolor** This parameter takes any valid color name in R as an input and visually identifies the group of nodes with the minnorm attribute.
+
+**majshape** This parameter specifies the shape of the nodes that are assigned to the majority group. Valid inputs are all shapes recognized by the vertex.shapes attribute in the plot() function of the igraph R package.
+
+**minshape** This parameter specifies the shape of the nodes that are assigned to the minority group. Valid inputs are all shapes recognized by the vertex.shapes attribute in the plot() function of the igraph R package.
+
+**CreatePlots** Takes TRUE or FALSE as input and specifies whether jpeg plots are created for each iteration of every network (not recommended for larger networks or large parameter spaces).
+
+**AnimatePlots** Takes "HTML" or "GIF" as input and specifies whether created jpeg plots should be combined into a GIF/HTML animation (see example - not recommended for larger networks or large parameter spaces).
+
 
 ## Arguments for Technical Settings
 
