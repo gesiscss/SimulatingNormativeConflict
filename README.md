@@ -42,5 +42,3 @@ Simulation(majority = "Christian",
 ### Network
 ![](ExampleNetwork.gif)
 
-### Results
-
