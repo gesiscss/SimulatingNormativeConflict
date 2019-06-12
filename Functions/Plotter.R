@@ -33,7 +33,7 @@ Plotter <- function(n,
                             edge.color = "black",
                             vertex.label = round(V(OutputNetworkList_passdown[[Slave_i]][[n]])$t,2),
                             main = paste("Iteration ",n,"of network ",Slave_i),
-                            label.cex = 0.8)
+                            label.cex = 0.6)
         
         # adding legend for shapes and colors
         legend(x= "bottomleft", legend=c(paste(majority_passdown,majnorm_passdown),
