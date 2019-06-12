@@ -20,12 +20,20 @@ Plotter <- function(n,
              quality = 100)
         
         
-        # plotting network
+        ### plotting network
+        
+        # ensuring each iteration has the same layout by including a seed
         set.seed(123)
+        
+        # creating network plot
         NetworkPlot <- plot(OutputNetworkList_passdown[[Slave_i]][[n]],
                             vertex.size = 10,
+                            layout=layout_with_kk,
                             vertex.color = V(OutputNetworkList_passdown[[Slave_i]][[n]])$color,
-                            main = paste("Iteration ",n,"of network ",Slave_i))
+                            edge.color = "black",
+                            vertex.label = round(V(OutputNetworkList_passdown[[Slave_i]][[n]])$t,2),
+                            main = paste("Iteration ",n,"of network ",Slave_i),
+                            label.cex = 0.8)
         
         # adding legend for shapes and colors
         legend(x= "bottomleft", legend=c(paste(majority_passdown,majnorm_passdown),
