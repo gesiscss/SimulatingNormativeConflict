@@ -1,4 +1,4 @@
-# Function to extract infromation at every iteration of each network
+# Function to extract information at every iteration of each network
 
 Extractor <- function(y,
                       majority_passdown = majority,
