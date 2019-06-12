@@ -6,10 +6,10 @@ GenerateStartingPoint <- function(m_passdown = m,
                                   majshape_passdown = majshape,
                                   minshape_passdown = minshape){
         
-        # creating vertex name sbased on m
+        # creating vertex names based on m
         VertexNames <- as.character(1:(2*m_passdown))
         
-        # Splitting them in half to get two speerate parts for the starting point network
+        # Splitting them in half to get two seperate parts for the starting point network
         VertexNamesA <- VertexNames[VertexNames[1]: median(as.numeric(VertexNames))]
         VertexNamesB <- VertexNames[(median(as.numeric(VertexNames)) + 1): (as.numeric(VertexNames[length(VertexNames)])+1)]
         
