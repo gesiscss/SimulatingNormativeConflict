@@ -85,25 +85,10 @@ AsynchronousUpdateing <- function(network,
                 
                 }
         
-        # We break the loop if the created network is identical to the previous one (commented out
-        # for asynchronous networks because the same network might result in different outcomes with
-        # a different updating order)
-        
-        # if(identical(network,NestedList[[n]],ignore.environment = TRUE)){
-                
-        #        break()
-        # }
-        
         # saving the generated network
         NestedList[[n+1]] <- network
-        
-        # We don´t need this ouput if we are using the pbmclapply wrapper to create a progress bar
-        # print(paste("Finished iteration",n, "of",iter_passdown))
-        
+       
         }
-        
-        # We don´t need this ouput if we are using the pbmclapply wrapper to create a progress bar
-        # print(paste("Finished all iterations of one parameter configuration"))
         
         # returning updated List of networks
         return(NestedList)
