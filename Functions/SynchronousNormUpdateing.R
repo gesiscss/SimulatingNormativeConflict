@@ -61,9 +61,7 @@ SynchronousNormUpdateing <- function(network,
         
         NestedList <- list()
         
-        # we have to update all nodes (going through the randomOrder once) MaxIterations
-        # number of times with the updated network from the previous round as input to the next round
-        
+        # we have to update all nodes 
         for(n in 1:iter_passdown){
                 
                 # Applying the function to all Nodes
@@ -82,7 +80,6 @@ SynchronousNormUpdateing <- function(network,
                 
         }
         
-        # We don´t need this ouput if we are using the pbmclapply wrapper to create a progress bar
-        # print(paste("Finished all iterations of one network"))
+        # returning updated Network list
         return(NestedList)
 }
