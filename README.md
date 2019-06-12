@@ -43,4 +43,20 @@ Simulation(majority = "Christian",
 ![](./Plots/ExampleNetwork12.gif)
 
 ### Results
-![](./Plots/OverallNormDist.png)
+
+#### Norms
+
+![](./Plots/NormChangeOverall.png)
+
+![](./Plots/NormChangeMajority.png)
+
+![](./Plots/NormChangeMinority.png)
+
+#### Ties
+
+![](./Plots/NormTiesMajority.png)
+
+![](./Plots/NormTiesMinority.png)
+
+![](./Plots/NormTiesBetweenGroups.png)
+
