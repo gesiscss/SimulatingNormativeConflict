@@ -40,9 +40,14 @@ Simulation(majority = "Christian",
            AnimatePlots = "GIF")
 ```
 ### Network
+
+Animation of changing norms in one of the 10 simulated networks.
+
 ![](./Plots/ExampleNetwork12.gif)
 
 ### Results
+
+In the following graphs, we are displaying the change in norms and corresponding percentages of different kinds of ties in the network animated above.
 
 #### Norms
 
