@@ -5,7 +5,7 @@ removeNULLs <- function(x){
   # Getting indices of null elements
   GetIndices <- function(y){return(length(y) == 0)}
   
-  # if sublist contains null elements, remove them, if it doesnt, do nothing
+  # if sublist contains null elements, remove them, if it doesn't, do nothing
   
   if(sum(sapply(x,GetIndices)) > 0){
     
