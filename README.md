@@ -65,3 +65,5 @@ In the following graphs, we are displaying the change in norms and corresponding
 
 ![](./Plots/NormTiesBetweenGroups.png)
 
+### Hit Counter
+[![HitCount](http://hits.dwyl.io/JuKo007/SimulatingNormativeConflict.svg)](http://hits.dwyl.io/JuKo007/SimulatingNormativeConflict)
